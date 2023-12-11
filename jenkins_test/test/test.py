@@ -1,10 +1,10 @@
 import time
 from selenium import webdriver
 
-# driver_path = r'C:\Users\User\Desktop\jenkins_test\driver\chromedriver.exe'
+driver_path = r'C:\Users\User\Desktop\jenkins_test\driver\chromedriver.exe'
 from selenium.webdriver.common.by import By
 
-driver = webdriver.Chrome()
+driver = webdriver.Chrome(executable_path=driver_path)
 
 driver.get('https://www.ulearning.app/ulearning/index.html#/i18n')
 driver.implicitly_wait(10)
