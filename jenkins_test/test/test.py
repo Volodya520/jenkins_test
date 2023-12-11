@@ -3,8 +3,9 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 
 
-driver_path = '/var/jenkins_home/workspace/jenkins_test/jenkins_test/driver/chromedriver.exe'
-driver = webdriver.Chrome(executable_path=driver_path)
+# driver_path = '/var/jenkins_home/workspace/jenkins_test/jenkins_test/driver/chromedriver.exe'
+# driver = webdriver.Chrome(executable_path=driver_path)
+driver = webdriver.Chrome()
 driver.get('https://www.ulearning.app/ulearning/index.html#/i18n')
 driver.implicitly_wait(10)
 driver.find_element(By.XPATH,"/html/body/div[1]/div/div/header/nav/div/button").click()
